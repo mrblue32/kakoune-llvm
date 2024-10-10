@@ -21,7 +21,7 @@ add-highlighter shared/llvm/double_string/fill fill string
 evaluate-commands %sh{
     keywords="i32 i16 i8 i1"
 
-    builtins="define declare call store"
+    builtins="define declare call store br ret"
 
     join() { sep=$2; eval set -- $1; IFS="$sep"; echo "$*"; }
 
